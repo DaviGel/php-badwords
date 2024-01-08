@@ -11,9 +11,17 @@
     <title>PHP Badwords </title>
   </head>
   <body>
-    <p><?php var_dump($paragraph); ?></p>
     <p>
-      <?php var_dump(str_replace($bad_word, '***', strtolower($paragraph))); ?>
+      <?php
+        echo $paragraph;
+        echo strlen($paragraph);
+      ?>
+    </p>
+    <p>
+      <?php
+        echo $new_paragraph = str_replace($bad_word, '***', strtolower($paragraph));
+        echo strlen($new_paragraph);
+      ?>
     </p>
   </body>
 </html>
