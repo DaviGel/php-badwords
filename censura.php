@@ -19,7 +19,7 @@
     </p>
     <p>
       <?php
-        echo $new_paragraph = str_replace($bad_word, '***', strtolower($paragraph));
+        echo $new_paragraph = str_replace(strtolower($bad_word), '***', strtolower($paragraph));
         echo strlen($new_paragraph);
       ?>
     </p>
